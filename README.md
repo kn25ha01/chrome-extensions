@@ -1,2 +1,2 @@
-# chrome_extensions
+# chrome-extensions
 my chrome extensions
