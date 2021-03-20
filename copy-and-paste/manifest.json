@@ -1,0 +1,26 @@
+{
+    "name": "copy and paste",
+    "description": "copy and paste",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["tabs", "activeTab"],
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["content_script.js"]
+        }
+    ],
+    "commands": {
+        "action01": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+A",
+                "mac": "Command+Shift+A"
+            },
+            "description": "copy and paste"
+        }
+    }
+}
